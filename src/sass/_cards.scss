@@ -1,0 +1,93 @@
+.cards {
+    --gap: 20px;
+    --size-icon: 35px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--gap);
+
+    margin: 0 auto;
+    max-width: $max-width;
+    width: $width;
+
+    img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    &__item {
+        padding: 10px;
+        background-color: lighten($background-color, 3);
+        box-shadow: 4px 4px 0 0 darken($background-color, 1);
+        border: 1px solid darken($background-color, 9);
+        border-radius: 7px;
+
+        &__images {
+            position: relative;
+            background-color: darken(white, 80);
+            color: white;
+            
+            padding-top: 100%;
+        }
+
+        &__content {
+
+            &__icons {
+                justify-content: space-between;
+                margin-top: 10px;
+
+                svg {
+                    width: var(--size-icon);
+                    height: var(--size-icon);
+                }
+
+                &,
+                &__views,
+                &__options {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+
+.menu-icons {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    &__item {
+        position: relative;
+        line-height: 0;
+
+        &__link {
+            padding: 0 5px;
+
+            &:first-of-type {
+                padding-left: 0;
+            }
+
+            &:last-of-type {
+                padding-right: 0;
+            }
+        }
+    }
+}
