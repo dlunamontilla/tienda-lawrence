@@ -1,9 +1,9 @@
 .cards {
     --gap: 20px;
-    --size-icon: 35px;
+    --size-icon: 27px;
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: var(--gap);
 
     margin: 0 auto;
@@ -40,12 +40,38 @@
             position: relative;
             background-color: darken(white, 80);
             color: white;
-            
+            overflow: hidden;
             padding-top: 100%;
+
+            &:hover &__caption {
+                opacity: 1;
+            }
+
+            &__caption {
+                transition: 600ms ease;
+                opacity: 0;
+
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                top: auto;
+                bottom: 0;
+                padding: 10px;
+                background-color: rgba(black, 0.6);
+
+                p {
+                    margin: 0;
+                    line-height: 1.6;
+                }
+
+                font: {
+                    size: 0.95rem;
+                }
+            }
         }
 
         &__content {
-
             &__icons {
                 justify-content: space-between;
                 margin-top: 10px;
@@ -66,17 +92,40 @@
     }
 }
 
-
 .menu-icons {
+    --color: #{darken(white, 90)};
+
     display: flex;
     margin: 0;
     padding: 0;
 
     list-style: none;
 
+    &,
+    &__item {
+        display: flex;
+        align-items: center;
+    }
     &__item {
         position: relative;
         line-height: 0;
+        transition: 300ms ease;
+        color: var(--color);
+        padding: 0 3px;
+        border-radius: 3px;
+        cursor: pointer;
+        border: 1px solid;
+        border-color: transparent;
+
+        &:hover {
+            --color: #{$color-base};
+            border-color: rgba($color-base, 0.3);
+        }
+
+        path {
+            fill: var(--color);
+            transition: 300ms ease;
+        }
 
         &__link {
             padding: 0 5px;

@@ -1,0 +1,72 @@
+.graphic-header {
+    --size: 80px;
+    --color: #{$color-base};
+
+    padding: 20px 10px;
+    background-color: white;
+
+
+    background-image: linear-gradient(to top, rgba(black, 0.1), transparent);
+    h2 {
+        margin: 0;
+    }
+
+    &__inner {
+        margin: 0 auto;
+        justify-content: space-between;
+
+        &__svg {
+            display: block;
+            height: var(--size);
+            width: var(--size);
+
+            path {
+                fill: var(--color);
+            }
+        }
+
+        &,
+        &__left,
+        &__right {
+            display: flex;
+            align-items: center;
+        }
+
+        &__left,
+        &__right {
+            flex-shrink: 0;
+            min-width: var(--size);
+            min-height: var(--size);
+            position: relative;
+        }
+
+        &__left {
+
+            h2 {
+                font: {
+                    size: 2rem;
+                }
+
+                color: var(--color);
+                margin-bottom: 20px;
+                margin-left: -20px;
+            }
+        }
+
+        &__right {
+            &::before {
+                content: "";
+                display: block;
+                position: relative;
+                
+                width: var(--size);
+                height: var(--size);
+                border-radius: 50%;
+
+                background-color: silver;
+
+                margin-right: 10px;
+            }
+        }
+    }
+}

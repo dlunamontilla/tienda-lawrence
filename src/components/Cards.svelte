@@ -5,36 +5,36 @@
     const data = [
         {
             src: "images/images.svg",
-            alt: "Texto Alternativo 1",
-            title: "Producto 1",
+            alt: "Calamardo Squid Game",
+            title: "Calamardo Squid Game",
             description:
                 "Descripción del producto que se ofrece en la tarjeta 1",
         },
         {
             src: "images/images.svg",
-            alt: "Texto Alternativo 2",
-            title: "Producto 2",
+            alt: "Squid Game",
+            title: "Squid Game",
             description:
                 "Descripción del producto que se ofrece en la tarjeta 2",
         },
         {
             src: "images/images.svg",
-            alt: "Texto Alternativo 3",
-            title: "Producto 3",
+            alt: "Shiba Inu (NFT)",
+            title: "Shiba Inu (NFT)",
             description:
                 "Descripción del producto que se ofrece en la tarjeta 3",
         },
         {
             src: "images/images.svg",
-            alt: "Texto Alternativo 4",
-            title: "Producto 4",
+            alt: "Bitcoin Game Token",
+            title: "Bitcoin Game Token",
             description:
                 "Descripción del producto que se ofrece en la tarjeta 3",
         },
         {
             src: "images/images.svg",
             alt: "Texto Alternativo 5",
-            title: "Producto 5",
+            title: "Ethereum Squid Game",
             description:
                 "Descripción del producto que se ofrece en la tarjeta 4",
         },

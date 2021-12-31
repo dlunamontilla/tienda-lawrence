@@ -1,9 +1,17 @@
 <script>
     // import { Router, Link, Route } from "svelte-routing";
+    import GraphicHeader from "./components/GraphicHeader.svelte";
+    import Banner from "./components/Banner.svelte";
     import Cards from "./components/Cards.svelte";
+    import Nav from "./components/Nav.svelte";
+    import Footer from "./components/Footer.svelte";
 </script>
 
-<header>Cabecera</header>
+<header>
+    <GraphicHeader />
+    <Banner />
+    <Nav />
+</header>
 
 <main>
     <section class="container">
@@ -11,4 +19,6 @@
     </section>
 </main>
 
-<footer class="footer">Lawrence Luna</footer>
+<footer class="footer">
+    <Footer />
+</footer>

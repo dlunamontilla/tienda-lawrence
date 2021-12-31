@@ -23,12 +23,12 @@
     export let formats = ["SVG", "CDR", "AI", "PSD"];
 </script>
 
-<div class="cards__item" {title}>
+<div class="cards__item" {description}>
     <div class="cards__item__images">
         <img {src} {alt} />
 
         <div class="cards__item__images__caption">
-            <p>{description}</p>
+            <p>{title}</p>
             <p><strong>Formatos: </strong> {formats.join(" - ")}</p>
         </div>
     </div>
@@ -36,7 +36,9 @@
     <div class="cards__item__content">
         <div class="cards__item__content__icons">
             <div class="cards__item__content__icons__views">
-                <Views /> 20.150K
+                <ul class="menu-icons">
+                    <li class="menu-icons__item"><Views /> 20.150K</li>
+                </ul>
             </div>
 
             <div class="cards__item__content__icons__options">

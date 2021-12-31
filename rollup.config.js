@@ -47,6 +47,7 @@ export default {
 
 		scss({
 			outputStyle: 'compressed',
+			sourceMap: true,
 			watch: [
 				'src/sass'
 			]
