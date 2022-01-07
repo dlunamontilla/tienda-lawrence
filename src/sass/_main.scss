@@ -1,5 +1,8 @@
 main {
-    background-color: white;
+    min-height: 50vh;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: darken(white, 10);
 }
 .container {
     padding: 40px 0;

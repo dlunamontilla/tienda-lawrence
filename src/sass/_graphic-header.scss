@@ -4,9 +4,8 @@
 
     padding: 20px 10px;
     background-color: white;
-
-
     background-image: linear-gradient(to top, rgba(black, 0.1), transparent);
+    
     h2 {
         margin: 0;
     }
@@ -14,7 +13,8 @@
     &__inner {
         margin: 0 auto;
         justify-content: space-between;
-
+        max-width: $max-width;
+        
         &__svg {
             display: block;
             height: var(--size);

@@ -33,10 +33,24 @@
         },
         {
             src: "images/images.svg",
-            alt: "Texto Alternativo 5",
+            alt: "Ethereum Squid Game",
             title: "Ethereum Squid Game",
             description:
                 "Descripción del producto que se ofrece en la tarjeta 4",
+        },
+        {
+            src: "https://cdn.pixabay.com/photo/2019/12/25/11/11/christmas-4718303_960_720.jpg",
+            alt: "Una Imagen de PixaBay",
+            title: "Una Imagen de PixaBay",
+            description:
+                "Descripción del producto que se ofrece en la tarjeta 5",
+        },
+        {
+            src: "https://cdn.pixabay.com/photo/2019/12/25/11/11/christmas-4718303_960_720.jpg",
+            alt: "Otra imagen de PixaBay",
+            title: "Otra imagen de PixaBay",
+            description:
+                "Descripción del producto que se ofrece en la tarjeta 6",
         },
     ];
 </script>

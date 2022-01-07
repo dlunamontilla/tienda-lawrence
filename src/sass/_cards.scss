@@ -33,8 +33,13 @@
         padding: 10px;
         background-color: lighten($background-color, 3);
         box-shadow: 4px 4px 0 0 darken($background-color, 1);
-        border: 1px solid darken($background-color, 9);
+        border: 1px solid $color-base;
         border-radius: 7px;
+        transition: 300ms ease;
+
+        &:hover {
+            box-shadow: 4px 4px 0 0 darken($background-color, 10);
+        }
 
         &__images {
             position: relative;

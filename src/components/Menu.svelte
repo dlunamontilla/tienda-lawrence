@@ -1,23 +1,47 @@
-<ul class="menu">
+<script>
+    import { Router, Link } from "svelte-routing";
+</script>
+
+<!-- <ul class="menu">
     <li class="menu__item">
-        <a href="./" class="menu__item__enlace">Inicio</a>
+        <a href="../" class="menu__item__enlace">Inicio</a>
     </li>
 
     <li class="menu__item">
-        <a href="#producto" class="menu__item__enlace">Producto</a>
+        <a href="/producto" class="menu__item__enlace">Producto</a>
     </li>
 
     <li class="menu__item">
-        <a href="#Historial" class="menu__item__enlace">Historial</a>
+        <a href="/historial" class="menu__item__enlace">Historial</a>
     </li>
 
     <li class="menu__item">
-        <a href="#Carrito" class="menu__item__enlace">Carrito</a>
+        <a href="/carrito" class="menu__item__enlace">Carrito</a>
     </li>
 
     <li class="menu__item">
-        <a href="#Favoritos" class="menu__item__enlace">Favoritos</a>
+        <a href="/favoritos" class="menu__item__enlace">Favoritos</a>
     </li>
-</ul>
+</ul> -->
 
 <!-- Estilos definidos en _nav.scss -->
+
+<Router>
+    <ul class="menu">
+        <li class="menu__item">
+            <Link to="../" replace={true} class="menu__item__enlace">Inicio</Link>
+        </li>
+        <li class="menu__item">
+            <Link to="/producto" class="menu__item__enlace">Productos</Link>
+        </li>
+        <li class="menu__item">
+            <Link to="/historial" class="menu__item__enlace">Historial</Link>
+        </li>
+        <li class="menu__item">
+            <Link to="/carrito" class="menu__item__enlace">Carrito</Link>
+        </li>
+        <li class="menu__item">
+            <Link to="/favoritos" class="menu__item__enlace">Favoritos</Link>
+        </li>
+    </ul>
+</Router>
