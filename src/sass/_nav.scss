@@ -1,0 +1,46 @@
+.navigation {
+    min-height: 70px;
+    background-color: rgba(black, 0.7);
+    color: white;
+    
+    justify-content: center;
+
+    &,
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__inner {
+        justify-content: space-between;
+        width: $width;
+        max-width: $max-width;
+    }
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+
+    &,
+    &__item {
+        padding: 0;
+    }
+
+    &__item {
+
+        &__enlace {
+            transition: 300ms ease;
+            color: white;
+            padding: 0 10px;
+
+            &:hover {
+                color: rgba(white, 0.7);
+            }
+
+            &:active {
+                color: white;
+            }
+        }
+    }
+}
